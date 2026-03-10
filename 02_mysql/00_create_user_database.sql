@@ -15,5 +15,10 @@ CREATE DATABASE menudb;
 -- 새롭게 생성한 스키마에 새롭게 생성한 계정이 권한을 가지도록 설정
 GRANT ALL PRIVILEGES ON menudb.* TO 'ohgiraffers'@'%';
 
+GRANT ALL PRIVILEGES ON practice_employdb.* TO 'ohgiraffers'@'%';
+
 -- 권한 부여 확인
 SHOW GRANTS FOR 'ohgiraffers'@'%';
+
+USE menudb;
+USE practice_employdb;
