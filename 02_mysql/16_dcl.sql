@@ -17,3 +17,7 @@ SHOW GRANTS FOR 'user1'@'%';
 -- 권한 부여
 -- menudb 데이터베이스의 모든 객체를 조회할 수 있는 권한을 user01에 부여
 GRANT SELECT ON menudb.* TO 'user1'@'%';
+
+-- user01로 접속하여 권한 테스트
+SELECT * FROM tbl_menu;
+INSERT INTO tbl_menu VALUES(NULL,'메뉴명',1000,4,'Y')
